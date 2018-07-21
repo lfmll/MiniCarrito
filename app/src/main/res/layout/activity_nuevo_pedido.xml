@@ -42,21 +42,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.103" />
 
-    <DatePicker
-        android:id="@+id/tpFecha"
-        android:layout_width="wrap_content"
-        android:layout_height="82dp"
-        android:layout_weight="1"
-        android:calendarViewShown="false"
-        android:datePickerMode="spinner"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.234"
-        />
-
     <TextView
         android:id="@+id/txtSeleccioneArticulo"
         android:layout_width="wrap_content"

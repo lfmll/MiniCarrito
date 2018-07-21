@@ -4,15 +4,15 @@ import android.content.ContentValues;
 
 import com.example.luisfernandomedinallorenti.mesatopicos.Vista.datos.SQLConstantes;
 
-public class articulo {
+public class Articulo {
     private int idArticulo;
     private String nombre;
     private String precio;
 
-    public articulo(){
+    public Articulo(){
     }
 
-    public articulo(String nombre, String precio) {
+    public Articulo(String nombre, String precio) {
         this.nombre = nombre;
         this.precio = precio;
     }
@@ -26,7 +26,7 @@ public class articulo {
     }
 
     public String getNombre() {
-        return nombre;
+       return nombre;
     }
 
     public void setNombre(String nombre) {

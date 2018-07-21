@@ -1,14 +1,16 @@
 package com.example.luisfernandomedinallorenti.mesatopicos.Vista.vista;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.luisfernandomedinallorenti.mesatopicos.R;
 import com.example.luisfernandomedinallorenti.mesatopicos.Vista.datos.Data;
-import com.example.luisfernandomedinallorenti.mesatopicos.Vista.modelo.articulo;
+import com.example.luisfernandomedinallorenti.mesatopicos.Vista.modelo.Articulo;
 
 public class NuevoArticulo extends AppCompatActivity {
     private EditText nombre,precio;
@@ -29,11 +31,13 @@ public class NuevoArticulo extends AppCompatActivity {
             public void onClick(View v) {
                 String nom=nombre.getText().toString();
                 String pre=precio.getText().toString();
-                articulo art=new articulo(nom,pre);
+                Articulo articulo=new Articulo(nom,pre);
                 data=new Data(getApplicationContext());
                 data.open();
-                data.insertarArticulo(art);
+                data.insertarArticulo(articulo);
+                Toast.makeText(getApplicationContext(),"Articulo Creado",Toast.LENGTH_LONG).show();
                 data.close();
+                finish();
             }
         });
     }

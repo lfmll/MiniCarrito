@@ -25,11 +25,13 @@ public class SQLConstantes {
                         PEDIDO_COLUMN_ID+" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "+
                         PEDIDO_COLUMN_NRO+" INTEGER NOT NULL,"+
                         PEDIDO_COLUMN_FECHA+" DATE,"+
-                        PEDIDO_COLUMN_ARICULO_ID+" INT);";
+                        PEDIDO_COLUMN_ARICULO_ID+" INTEGER);";
 
     public static final String[] ALL_ARTICULOS_COLUMNS={ARTICULO_COLUMN_ID, ARTICULO_COLUMN_NOMBRE,ARTICULO_COLUMN_PRECIO};
     public static final String[] ALL_PEDIDOS_COLUMNS={PEDIDO_COLUMN_ID,PEDIDO_COLUMN_NRO,PEDIDO_COLUMN_FECHA,PEDIDO_COLUMN_ARICULO_ID};
-    public static final String SQL_DELETE="DROP TABLE"+TABLE_ARTICULO;
+    public static final String SQL_DELETE_ARTICULO="DROP TABLE"+TABLE_ARTICULO;
+    public static final String SQL_DELETE_PEDIDO="DROP TABLE"+TABLE_PEDIDO;
     public static final String SELECT_ALL_ARTICULO="SELECT * FROM"+TABLE_ARTICULO;
     public static final String SELECT_ALL_PEDIDO="SELECT * FROM"+TABLE_PEDIDO;
+    public static final String SEARCH_BY_IDARTICULO="idarticulo=?";
 }

@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Vista.vista.NuevoArticulo" />
-        <activity android:name=".Vista.vista.NuevoPedido"></activity>
+        <activity android:name=".Vista.vista.NuevoPedido" />
+        <activity android:name=".Vista.vista.VerPedidos"></activity>
     </application>
 
 </manifest>
